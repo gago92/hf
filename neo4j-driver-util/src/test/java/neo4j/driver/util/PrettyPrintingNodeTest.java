@@ -21,7 +21,7 @@ public class PrettyPrintingNodeTest {
 	@Test
 	public void testName() throws Exception {
 		List<String> labels = ImmutableList.of("Person");
-		Map<String, Value> nodeProperties = ImmutableMap.of("name", Values.value("John Doe"));
+		Map<String, Value> nodeProperties = ImmutableMap.of("name", Values.value("John Doe") );
 		Node node = new InternalNode(1, labels, nodeProperties);
 		System.out.println(PrettyPrinter.toString(node));
 
